@@ -8,9 +8,9 @@ class Plant:
         return self.__color
 
 
-class Flower(Plant):
+class Flower(Plant): # can't create subclass without creating superclass (plant)
     def __init__(self,color, petals):
-        Plant.__init__(self,color)
+        Plant.__init__(self,color) #if you skip this you will get an error 
 
         self.__petals = petals
 
